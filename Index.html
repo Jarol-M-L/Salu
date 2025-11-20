@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Área de Salud</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Área de Salud</h1>
+
+
+<h2 id="presion">1. Clasificación de presión arterial</h2>
+<label for="sistolica">Presión sistólica:</label>
+<input type="number" id="sistolica" placeholder="mmHg">
+<label for="diastolica">Presión diastólica:</label>
+<input type="number" id="diastolica" placeholder="mmHg">
+<button onclick="clasificarPresion()">Clasificar</button>
+<p id="resultadoPresion"></p>
+
+<h2 id="temperatura">2. Registrar temperatura de varios pacientes</h2>
+<label for="numPacientes">Número de pacientes:</label>
+<input type="number" id="numPacientes" placeholder="Cantidad">
+<button onclick="pedirTemperaturas()">Ingresar temperaturas</button>
+<div id="tempInputs"></div>
+<p id="resultadoTemperatura"></p>
+
+<h2 id="fiebre">3. Contar pacientes con fiebre</h2>
+<label for="tempPaciente">Ingresa temperatura (°C) o 0 para terminar:</label>
+<input type="number" id="tempPaciente" placeholder="Temperatura">
+<button onclick="agregarFiebre()">Agregar</button>
+<p id="resultadoFiebre">Pacientes con fiebre ≥ 38°C: 0</p>
+
+<h2 id="triage">4. Clasificación de TRIAGE</h2>
+<label for="codigoTriage">Código 1-4:</label>
+<input type="number" id="codigoTriage" placeholder="Código">
+<button onclick="clasificarTriage()">Clasificar</button>
+<p id="resultadoTriage"></p>
+
+<h2 id="saturacion">5. Registro de saturación SpO2</h2>
+<label for="nivelSpO2">Ingresa saturación o 'no' para terminar:</label>
+<input type="text" id="nivelSpO2" placeholder="SpO2">
+<button onclick="registrarSpO2()">Agregar</button>
+<p id="resultadoSpO2"></p>
+
+<script src"script.js">
+  
+</script>
+
+</body>
+</html>
